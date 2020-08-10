@@ -13,8 +13,12 @@ function palindrome(str) {
   //   } else {
   //     return false;
   //   }
-  //   const reversed = str.split('').reverse().join('')
-  //   return reversed === str
+  //
+  //
+  const reversed = str.split("").reverse().join("");
+  return reversed === str;
+  //
+  //
   // return str.split("").every((char, index) => {
   //   return char === str[str.length - index - 1];
   // });
