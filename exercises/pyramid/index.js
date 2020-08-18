@@ -14,6 +14,24 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  const spaces = [];
+
+  const octothorpes = [];
+
+  for (let i = 0; i < n; i++) {
+    spaces.push(" ");
+  }
+
+  for (let i = 0; i < n; i++) {
+    if (i === 0) {
+      octothorpes.push("#");
+      console.log(spaces.join("") + octothorpes.join("") + spaces.join(""));
+    }
+    octothorpes.push("##");
+    spaces.pop();
+    console.log(spaces.join("") + octothorpes.join("") + spaces.join(""));
+  }
+}
 
 module.exports = pyramid;
