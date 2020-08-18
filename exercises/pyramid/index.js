@@ -19,12 +19,12 @@ function pyramid(n) {
 
   const octothorpes = [];
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 1; i < n; i++) {
     spaces.push(" ");
   }
 
-  for (let i = 0; i < n; i++) {
-    if (i === 0) {
+  for (let i = 1; i < n; i++) {
+    if (i === 1) {
       octothorpes.push("#");
       console.log(spaces.join("") + octothorpes.join("") + spaces.join(""));
     }
